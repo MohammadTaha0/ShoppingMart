@@ -1,0 +1,13 @@
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\bin\Debug\ShoppingMart.exe.config
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\bin\Debug\ShoppingMart.exe
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\bin\Debug\ShoppingMart.pdb
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.AssemblyReference.cache
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.SuggestedBindingRedirects.cache
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Properties.Resources.resources
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.GenerateResource.cache
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.CoreCompileInputs.cache
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.exe
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.pdb
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Register.resources
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Alert.resources
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Login.resources
