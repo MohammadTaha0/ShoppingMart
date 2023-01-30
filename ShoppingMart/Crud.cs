@@ -33,5 +33,12 @@ namespace ShoppingMart
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public void CrudData(string query)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query,con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
