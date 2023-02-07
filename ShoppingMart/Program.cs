@@ -16,7 +16,7 @@ namespace ShoppingMart
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GenerateBills());
+            Application.Run(new LoginForm());
         }
     }
 }

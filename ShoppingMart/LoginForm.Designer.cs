@@ -1,6 +1,6 @@
 ﻿namespace ShoppingMart
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbbxRole = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             this.txtbxUser.MaxLength = 40;
             this.txtbxUser.Name = "txtbxUser";
             this.txtbxUser.Size = new System.Drawing.Size(411, 26);
-            this.txtbxUser.TabIndex = 1;
+            this.txtbxUser.TabIndex = 0;
             // 
             // label2
             // 
@@ -87,7 +89,7 @@
             this.txtbxPass.Name = "txtbxPass";
             this.txtbxPass.PasswordChar = '*';
             this.txtbxPass.Size = new System.Drawing.Size(411, 26);
-            this.txtbxPass.TabIndex = 3;
+            this.txtbxPass.TabIndex = 1;
             // 
             // button1
             // 
@@ -96,10 +98,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(51, 228);
+            this.button1.Location = new System.Drawing.Point(51, 269);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(516, 38);
-            this.button1.TabIndex = 5;
+            this.button1.Size = new System.Drawing.Size(516, 39);
+            this.button1.TabIndex = 3;
             this.button1.Text = "Login Now";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -131,20 +133,42 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // Login
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(47, 223);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Role:";
+            // 
+            // cmbbxRole
+            // 
+            this.cmbbxRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbbxRole.FormattingEnabled = true;
+            this.cmbbxRole.Location = new System.Drawing.Point(157, 220);
+            this.cmbbxRole.Name = "cmbbxRole";
+            this.cmbbxRole.Size = new System.Drawing.Size(409, 29);
+            this.cmbbxRole.TabIndex = 2;
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 345);
+            this.Controls.Add(this.cmbbxRole);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtbxPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtbxUser);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
-            this.Name = "Login";
+            this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -164,5 +188,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbbxRole;
     }
 }

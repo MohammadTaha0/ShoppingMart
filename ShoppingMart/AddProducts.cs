@@ -20,6 +20,11 @@ namespace ShoppingMart
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice videoCaptureDevice;
 
+        public static class Login
+        {
+           public static int userRole = 0;
+        }
+
         Crud cd = new Crud();
         public AddProducts()
         {
@@ -49,7 +54,6 @@ namespace ShoppingMart
                 }));
             }
             pictureBox1.Image = bitmap;
-            //picCamera.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
         public void display()
@@ -62,10 +66,6 @@ namespace ShoppingMart
                 comboBox1.Items.Add(Convert.ToInt64(item["vendorId"].ToString()) + " " + item["venName"].ToString());
             }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public void clearData()
         {
@@ -73,6 +73,7 @@ namespace ShoppingMart
             txtbsPrice.Text = "";
             comboBox1.Text = "";
             txtbxbar.Text = "";
+            txtbxQuan.Text = "";
         }
         int id = 0;
         private void btnAdd_Click(object sender, EventArgs e)
@@ -83,10 +84,11 @@ namespace ShoppingMart
             string price = txtbsPrice.Text;
             string venId = comboBox1.Text;
             string bar = txtbxbar.Text;
+            string quan = txtbxQuan.Text;
 
 
 
-            if (name != "" && price != "" && bar != "" && venId != "")
+            if (name != "" && price != "" && bar != "" && venId != "" && quan != "")
             {
                 int vend = (int)Convert.ToInt64(venId.Split(' ')[0]);
 
@@ -94,7 +96,7 @@ namespace ShoppingMart
                 {
                     if (cd.DisplayData("select * from tbl_products where barcode = '" + bar + "'").Rows.Count == 0)
                     {
-                        cd.CrudData("insert into tbl_products(barcode,product_name,price,venId) values('" + bar + "','" + name + "'," + Convert.ToInt64(price) + "," + vend + ")");
+                        cd.CrudData("insert into tbl_products(barcode,product_name,price,venId,quan) values('" + bar + "','" + name + "'," + Convert.ToInt64(price) + "," + vend + ",'" + quan + "')");
                         clearData();
                     }
                     else
@@ -106,7 +108,7 @@ namespace ShoppingMart
                 {
                     if (cd.DisplayData("select * from tbl_products where barcode = '" + bar + "'").Rows.Count == 1)
                     {
-                        cd.CrudData("update tbl_products set product_name = '" + txtbxName.Text + "', barcode = '" + txtbxbar.Text + "', price = '" + txtbsPrice.Text + "', venId = '" + comboBox1.Text + "' where product_id = '" + id + "'");
+                        cd.CrudData("update tbl_products set product_name = '" + txtbxName.Text + "', barcode = '" + txtbxbar.Text + "', price = '" + txtbsPrice.Text + "', venId = '" + comboBox1.Text + "',quan = '" + quan + "' where product_id = '" + id + "'");
                         clearData();
                     }
                     else
@@ -134,6 +136,7 @@ namespace ShoppingMart
             txtbxName.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtbsPrice.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             comboBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtbxQuan.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
 
         }
 
@@ -146,7 +149,6 @@ namespace ShoppingMart
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             if (videoCaptureDevice != null)
             {
                 if (videoCaptureDevice.IsRunning)
@@ -154,12 +156,6 @@ namespace ShoppingMart
                     videoCaptureDevice.Stop();
                 }
             }
-
-        }
-
-        public void displayItems()
-        {
-
         }
 
         List<List<string>> list = new List<List<string>>() {
@@ -169,7 +165,7 @@ namespace ShoppingMart
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                
+
                 int qty = 1;
                 for (int n = 0; n < list.Count; n++)
                 {
@@ -195,14 +191,65 @@ namespace ShoppingMart
                     }
                 }
             }
-            if (e.KeyChar == 13)
-            {
-                //lst.Add(txtbxbar.Text);
-                //for (int i = 0; i < lst.Count; i++)
-                //{
-                //    label6.Text += txtbxbar.Text + "\n";
-                //}
-            }
+        }
+
+        private void AddProducts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxbar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbsPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxQuan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manageProduct_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            this.Hide();
+            admin.ShowDialog();
+            this.Close();
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            //GenerateBills gn = new GenerateBills();
+            LoginForm lgn = new LoginForm();
+            this.Hide();
+            lgn.ShowDialog();
+            this.Close();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ShoppingMart
 {
-    public partial class Login : Form
+    public partial class LoginForm : Form
     {
-        public Login()
+        Crud crud = new Crud();
+        public static class loginAuth
+        {
+            public static int role;
+        }
+        public LoginForm()
         {
             InitializeComponent();
+            DataTable cd = crud.DisplayData("select * from tbl_role");
+            for (int i = 0; i < cd.Rows.Count; i++)
+            {
+                cmbbxRole.Items.Add(cd.Rows[i]["role"] + " " + cd.Rows[i]["name"]);
+            }
         }
 
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,14 +63,30 @@ namespace ShoppingMart
             Cursor.Current = Cursors.WaitCursor;
             string user = txtbxUser.Text;
             string pass = txtbxPass.Text;
-            if (user != "" && pass != "")
+            string roles = cmbbxRole.Text;
+            if (user != "" && pass != "" && roles != "")
             {
                 Crud crud = new Crud();
-                if (crud.DisplayData("select * from tbl_register where username = '" + user + "' and password = '" + pass + "'").Rows.Count > 0)
+                string role = cmbbxRole.Text.Split(' ')[0];
+                if (crud.loginAuth(user,pass,role))
                 {
                     ClearData();
                     Alert("Login SucessFully", "success");
                     Cursor.Current = Cursors.Arrow;
+                    if (role == "0")
+                    {
+                        Admin Admin = new Admin();
+                        this.Hide();
+                        Admin.ShowDialog();
+                        this.Close();
+                    }
+                    else if (role == "1")
+                    {
+                        GenerateBills GB = new GenerateBills();
+                        this.Hide();
+                        GB.ShowDialog();
+                        this.Close();
+                    }
                 }
                 else
                 {
@@ -70,7 +96,7 @@ namespace ShoppingMart
             }
             else
             {
-                Alert("Please Fill Both Fields!", "red");
+                Alert("Please Fill All Fields!", "red");
             }
         }
     }

@@ -73,7 +73,6 @@ namespace ShoppingMart
             this.timer1.Interval = 1;
             this.timer1.Start();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Interval = 1;
@@ -110,7 +109,7 @@ namespace ShoppingMart
                     this.Left -= 3;
                     if (base.Opacity == 0.0)
                     {
-                        base.Close();
+                        this.Hide();
                     }
                     break;
             }

@@ -10,7 +10,6 @@ C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.exe
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.pdb
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Register.resources
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Alert.resources
-C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Login.resources
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.AddProducts.resources
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Home.resources
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Vendor.resources
@@ -26,3 +25,5 @@ C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\bin\Debug\zxing.xml
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\bin\Debug\zxing.presentation.xml
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.CopyComplete
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.GenerateBills.resources
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Admin.resources
+C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.LoginForm.resources

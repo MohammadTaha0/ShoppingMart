@@ -102,5 +102,21 @@ namespace ShoppingMart
             txtbxVAdd.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
 
         }
+
+        private void manageProduct_Click(object sender, EventArgs e)
+        {
+            Admin adm = new Admin();
+            this.Hide();
+            adm.ShowDialog();
+            this.Close();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            LoginForm lgn = new LoginForm();
+            this.Hide();
+            lgn.ShowDialog();
+            this.Close();
+        }
     }
 }

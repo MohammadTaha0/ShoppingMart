@@ -48,6 +48,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbbxRole = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,7 @@
             this.txtbxName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtbxName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxName.Location = new System.Drawing.Point(183, 126);
-            this.txtbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxName.Margin = new System.Windows.Forms.Padding(4);
             this.txtbxName.MaxLength = 20;
             this.txtbxName.Name = "txtbxName";
             this.txtbxName.Size = new System.Drawing.Size(483, 27);
@@ -102,7 +104,7 @@
             this.txtbxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtbxUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxUserName.Location = new System.Drawing.Point(183, 182);
-            this.txtbxUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtbxUserName.MaxLength = 20;
             this.txtbxUserName.Name = "txtbxUserName";
             this.txtbxUserName.Size = new System.Drawing.Size(484, 27);
@@ -126,7 +128,7 @@
             this.txtbxMob.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtbxMob.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxMob.Location = new System.Drawing.Point(183, 243);
-            this.txtbxMob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxMob.Margin = new System.Windows.Forms.Padding(4);
             this.txtbxMob.MaxLength = 11;
             this.txtbxMob.Name = "txtbxMob";
             this.txtbxMob.Size = new System.Drawing.Size(484, 27);
@@ -150,7 +152,7 @@
             this.txtbxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtbxEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxEmail.Location = new System.Drawing.Point(183, 308);
-            this.txtbxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtbxEmail.MaxLength = 40;
             this.txtbxEmail.Name = "txtbxEmail";
             this.txtbxEmail.Size = new System.Drawing.Size(484, 27);
@@ -174,7 +176,7 @@
             this.txtbxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtbxPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxPassword.Location = new System.Drawing.Point(183, 371);
-            this.txtbxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtbxPassword.MaxLength = 20;
             this.txtbxPassword.Name = "txtbxPassword";
             this.txtbxPassword.PasswordChar = '*';
@@ -189,8 +191,8 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegister.Location = new System.Drawing.Point(65, 433);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Location = new System.Drawing.Point(63, 470);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnRegister.Size = new System.Drawing.Size(602, 37);
@@ -281,17 +283,39 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(63, 434);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 21);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Role:";
+            // 
+            // cmbbxRole
+            // 
+            this.cmbbxRole.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbbxRole.FormattingEnabled = true;
+            this.cmbbxRole.Location = new System.Drawing.Point(183, 433);
+            this.cmbbxRole.Name = "cmbbxRole";
+            this.cmbbxRole.Size = new System.Drawing.Size(483, 28);
+            this.cmbbxRole.TabIndex = 13;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 515);
+            this.Controls.Add(this.cmbbxRole);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtbxPassword);
             this.Controls.Add(this.label5);
@@ -306,11 +330,12 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Register";
             this.Padding = new System.Windows.Forms.Padding(4);
             this.Text = "Register Form";
+            this.Load += new System.EventHandler(this.Register_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -340,6 +365,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbbxRole;
     }
 }
 

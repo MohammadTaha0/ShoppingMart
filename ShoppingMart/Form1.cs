@@ -21,6 +21,11 @@ namespace ShoppingMart
         public Register()
         {
             InitializeComponent();
+            DataTable cd = crud.DisplayData("select * from tbl_role");
+            for (int i = 0; i < cd.Rows.Count; i++)
+            {
+                cmbbxRole.Items.Add(cd.Rows[i]["role"] + " "+cd.Rows[i]["name"]);
+            }
         }
         private void ClearData()
         {
@@ -48,14 +53,14 @@ namespace ShoppingMart
                     label8.ForeColor = Color.White;
                     label8.BackColor = Color.Red;
                     UserStatus = 1;
-                    Alert("Already Exist!","Danger");
+                    Alert("Already Exist!", "Danger");
                 }
                 else if (txtbxUserName.TextLength < 5)
                 {
                     label8.Text = "Should > 5";
                     label8.ForeColor = Color.White;
                     label8.BackColor = Color.Red;
-                    Alert("Should > 5","Danger");
+                    Alert("Should > 5", "Danger");
                     UserStatus = 1;
                 }
                 else
@@ -122,9 +127,9 @@ namespace ShoppingMart
             }
             else if (txtbx.Name == "txtbxPassword")
             {
-                if (txtbxPassword.TextLength < 8)
+                if (txtbxPassword.TextLength < 4)
                 {
-                    label11.Text = "Should > 8";
+                    label11.Text = "Should > 4";
                     label11.ForeColor = Color.White;
                     label11.BackColor = Color.Red;
                     PassStatus = 1;
@@ -140,34 +145,39 @@ namespace ShoppingMart
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if(NameStatus == 0 && UserStatus == 0 && MobileStatus == 0 && EmailStatus == 0 && PassStatus == 0)
+            if (NameStatus == 0 && UserStatus == 0 && MobileStatus == 0 && EmailStatus == 0 && PassStatus == 0)
             {
-                crud.InsertData(txtbxName.Text,txtbxEmail.Text,txtbxMob.Text,txtbxPassword.Text,txtbxUserName.Text);
+                crud.InsertData(txtbxName.Text, txtbxEmail.Text, txtbxMob.Text, txtbxPassword.Text, txtbxUserName.Text, cmbbxRole.Text.Split(' ')[0]);
                 ClearData();
-                this.Alert("Registered SuccessFully","sucsess");
+                this.Alert("Registered SuccessFully", "success");
             }
             else
             {
-                this.Alert("Plesae Fill Properly!","red");
+                this.Alert("Plesae Fill Properly!", "red");
             }
         }
         public void Alert(string msg, string type)
         {
             Alert frm = new Alert();
-            frm.showAlert(msg,type);
+            frm.showAlert(msg, type);
         }
 
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          this.Alert("Already Running!","red");
+            this.Alert("Already Running!", "red");
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login login = new Login();
+            LoginForm login = new LoginForm();
             login.ShowDialog();
             this.Close();
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
