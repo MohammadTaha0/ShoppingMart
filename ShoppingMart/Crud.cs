@@ -10,7 +10,7 @@ namespace ShoppingMart
 {
     internal class Crud
     {
-        SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=ShoppingMart;User ID=mtaha;Password=mtaha");
+        SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=ShoppingMart;User ID=taha1234;Password=taha1234");
         int id = 0;
         public DataTable DisplayData(string query)
         {
@@ -21,7 +21,7 @@ namespace ShoppingMart
             con.Close();
             return dt;
         }
-        public void InsertData(string name, string mob, string email, string password, string username, string role)
+        public void InsertData(string name, string email, string mob, string password, string username, string role)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into tbl_register([name],email,mob,[password],username,role) values(@name,@email,@mob,@pass,@username,@role)", con);

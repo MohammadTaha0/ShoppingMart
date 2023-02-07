@@ -65,6 +65,14 @@ namespace ShoppingMart
         public void display()
         {
             dataGridView1.DataSource = crd.DisplayData("select * from tbl_vendor");
+            if(crd.DisplayData("select * from tbl_vendor").Rows.Count > 0)
+            {
+                dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
         }
         private void btnAddVen_Click(object sender, EventArgs e)
         {

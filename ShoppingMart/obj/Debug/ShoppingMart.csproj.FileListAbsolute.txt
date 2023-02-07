@@ -27,3 +27,33 @@ C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csp
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.GenerateBills.resources
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Admin.resources
 C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.LoginForm.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\ShoppingMart.exe.config
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\ShoppingMart.exe
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\ShoppingMart.pdb
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\AForge.dll
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\AForge.Video.dll
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\zxing.dll
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\zxing.presentation.dll
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\AForge.xml
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\AForge.Video.xml
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\zxing.xml
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\bin\Debug\zxing.presentation.xml
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.AssemblyReference.cache
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.AddProducts.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Admin.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Alert.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Register.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.GenerateBills.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Home.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.LoginForm.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Properties.Resources.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.Vendor.resources
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.GenerateResource.cache
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.csproj.CopyComplete
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.exe
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.pdb
+C:\Users\Mohammad Taha\source\repos\ShoppingMart\ShoppingMart\ShoppingMart\obj\Debug\ShoppingMart.User.resources

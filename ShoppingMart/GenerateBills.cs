@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +22,7 @@ namespace ShoppingMart
         Alert alrt = new Alert();
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice videoCaptureDevice;
-        System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\mtaha\source\repos\ShoppingMart\ShoppingMart\bin\assets\sounds\beep.wav");
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer(AppDomain.CurrentDomain.BaseDirectory.ToString().Replace("Debug\\", "assets\\sounds\\beep.wav"));
         public GenerateBills()
         {
             InitializeComponent();
@@ -249,7 +251,7 @@ namespace ShoppingMart
                         grp = Graphics.FromImage(bitmap);
                         Point panelLocation = PointToScreen(panel.Location);
                         grp.CopyFromScreen(panelLocation.X, panelLocation.Y, 0, 0, formSize);
-                        printPreviewDialog1.Document = printDocument1;                 printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+                        printPreviewDialog1.Document = printDocument1; printPreviewDialog1.PrintPreviewControl.Zoom = 1;
                         printPreviewDialog1.ShowDialog();
                         prfo.Clear();
                         txtbxbar.Text = "";
@@ -295,7 +297,6 @@ namespace ShoppingMart
                 e.Graphics.DrawString((prfo[i].price / prfo[i].qty).ToString(), new Font("Century Gothic", 12, FontStyle.Regular), Brushes.Black, new Point(650, 140 + x));
                 e.Graphics.DrawString(prfo[i].price.ToString(), new Font("Century Gothic", 12, FontStyle.Regular), Brushes.Black, new Point(750, 140 + x));
             }
-            MessageBox.Show(x.ToString());
             int z = x + 250;
             e.Graphics.DrawString("Total: ", new Font("Century Gothic", 12, FontStyle.Regular), Brushes.Black, new Point(500, z));
             e.Graphics.DrawString(prfo.Select(y => y.price).Sum().ToString(), new Font("Century Gothic", 12, FontStyle.Regular), Brushes.Black, new Point(750, z));
